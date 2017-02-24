@@ -1,0 +1,17 @@
+extends layout
+
+block content
+	.container
+		h1 File MicroServer
+		span.label.label-info 这是一个练习Node全栈的小工具
+		.clear(style='height:2px;margin:5px 0')
+		blockquote
+			p 使用手册
+			ol
+				li 上传你的文件
+				li 得到服务器返回文件的大小
+		form(method='post',action='/upload',enctype='multipart/form-data')
+			input(name='userFile',type='file',placeholer='file')
+			input(type='submit',value='upload')
+
+	
